@@ -182,7 +182,7 @@ namespace AmadeusWeb.SmartSiteUploader
 
 		private void ShowPwdMnu_CheckStateChanged(object sender, System.EventArgs e)
 		{
-			dgvItems.InvalidateColumn(2);
+			dgvItems.InvalidateColumn(4);
 		}
 
 		private void GrabberMnu_Click(object sender, System.EventArgs e)

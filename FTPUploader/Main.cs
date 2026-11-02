@@ -357,7 +357,12 @@ namespace AmadeusWeb.SmartSiteUploader
             foreach (ListViewItem item in Files.Items) if (item.Checked == false) Files.Items.Remove(item);
 		}
 
-		private void SelectMnu_Click(object sender, EventArgs e)
+        private void RecheckErrorsMnu_Click(object sender, EventArgs e)
+        {
+            foreach (ListViewItem item in Files.Items) if (item.Checked == false) Files.Items.Remove(item);
+        }
+
+        private void SelectMnu_Click(object sender, EventArgs e)
 		{
 			if (!FtpInfo.HasMultipleOptions) return;
 
@@ -430,6 +435,6 @@ namespace AmadeusWeb.SmartSiteUploader
 			MessageBox.Show(string.Format("Copied paths of {0} {1} items", list.Count, copyChecked ? "checked" : "selected"), Text);
 		}
 
-		#endregion
-	}
+        #endregion
+    }
 }

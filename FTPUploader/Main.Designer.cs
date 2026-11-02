@@ -72,6 +72,7 @@
             this.CheckUpdatesMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.UpdateSettingsMnu = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutFTPSyncMnu = new System.Windows.Forms.ToolStripMenuItem();
+            this.RecheckErrorsMnu = new System.Windows.Forms.ToolStripButton();
             this.ContextMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Splitter)).BeginInit();
             this.Splitter.Panel1.SuspendLayout();
@@ -88,7 +89,7 @@
             this.Log.Location = new System.Drawing.Point(0, 0);
             this.Log.Multiline = true;
             this.Log.Name = "Log";
-            this.Log.Size = new System.Drawing.Size(956, 102);
+            this.Log.Size = new System.Drawing.Size(956, 150);
             this.Log.TabIndex = 1;
             this.Log.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Log_KeyDown);
             // 
@@ -109,7 +110,7 @@
             this.Files.LargeImageList = this.icons;
             this.Files.Location = new System.Drawing.Point(0, 0);
             this.Files.Name = "Files";
-            this.Files.Size = new System.Drawing.Size(956, 229);
+            this.Files.Size = new System.Drawing.Size(956, 331);
             this.Files.SmallImageList = this.icons;
             this.Files.TabIndex = 0;
             this.Files.UseCompatibleStateImageBehavior = false;
@@ -122,7 +123,7 @@
             // NameCol
             // 
             this.NameCol.Text = "File";
-            this.NameCol.Width = 873;
+            this.NameCol.Width = 560;
             // 
             // MsgCol
             // 
@@ -233,8 +234,8 @@
             // Splitter.Panel2
             // 
             this.Splitter.Panel2.Controls.Add(this.Log);
-            this.Splitter.Size = new System.Drawing.Size(956, 335);
-            this.Splitter.SplitterDistance = 229;
+            this.Splitter.Size = new System.Drawing.Size(956, 485);
+            this.Splitter.SplitterDistance = 331;
             this.Splitter.TabIndex = 4;
             // 
             // fsw
@@ -258,6 +259,7 @@
             this.ClearMnu,
             this.ClearSelectedMnu,
             this.ClearUncheckedMnu,
+            this.RecheckErrorsMnu,
             this.Sep3,
             this.SelectMnu,
             this.GrabberMnu,
@@ -267,7 +269,7 @@
             this.MenuBar.Name = "MenuBar";
             this.MenuBar.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.MenuBar.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.MenuBar.Size = new System.Drawing.Size(874, 35);
+            this.MenuBar.Size = new System.Drawing.Size(957, 35);
             this.MenuBar.TabIndex = 5;
             this.MenuBar.Text = "Toolbar";
             // 
@@ -416,29 +418,38 @@
             // CheckUpdatesMnu
             // 
             this.CheckUpdatesMnu.Name = "CheckUpdatesMnu";
-            this.CheckUpdatesMnu.Size = new System.Drawing.Size(181, 22);
+            this.CheckUpdatesMnu.Size = new System.Drawing.Size(180, 22);
             this.CheckUpdatesMnu.Text = "Check for &Updates";
             this.CheckUpdatesMnu.Click += new System.EventHandler(this.CheckUpdatesMnu_Click);
             // 
             // UpdateSettingsMnu
             // 
             this.UpdateSettingsMnu.Name = "UpdateSettingsMnu";
-            this.UpdateSettingsMnu.Size = new System.Drawing.Size(181, 22);
+            this.UpdateSettingsMnu.Size = new System.Drawing.Size(180, 22);
             this.UpdateSettingsMnu.Text = "Update S&ettings";
             this.UpdateSettingsMnu.Click += new System.EventHandler(this.UpdateSettingsMnu_Click);
             // 
             // AboutFTPSyncMnu
             // 
             this.AboutFTPSyncMnu.Name = "AboutFTPSyncMnu";
-            this.AboutFTPSyncMnu.Size = new System.Drawing.Size(181, 22);
+            this.AboutFTPSyncMnu.Size = new System.Drawing.Size(180, 22);
             this.AboutFTPSyncMnu.Text = "About &FTP Uploader";
             this.AboutFTPSyncMnu.Click += new System.EventHandler(this.AboutFTPSyncMnu_Click);
+            // 
+            // RecheckErrorsMnu
+            // 
+            this.RecheckErrorsMnu.Image = global::AmadeusWeb.SmartSiteUploader.Properties.Resources.clear;
+            this.RecheckErrorsMnu.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.RecheckErrorsMnu.Name = "RecheckErrorsMnu";
+            this.RecheckErrorsMnu.Size = new System.Drawing.Size(83, 32);
+            this.RecheckErrorsMnu.Text = "&Recheck";
+            this.RecheckErrorsMnu.Click += new System.EventHandler(this.RecheckErrorsMnu_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 411);
+            this.ClientSize = new System.Drawing.Size(984, 561);
             this.Controls.Add(this.MenuBar);
             this.Controls.Add(this.Splitter);
             this.MinimumSize = new System.Drawing.Size(1000, 450);
@@ -502,5 +513,6 @@
 		private System.Windows.Forms.ToolStripMenuItem CheckUpdatesMnu;
 		private System.Windows.Forms.ToolStripMenuItem UpdateSettingsMnu;
 		private System.Windows.Forms.ToolStripMenuItem AboutFTPSyncMnu;
-	}
+        private System.Windows.Forms.ToolStripButton RecheckErrorsMnu;
+    }
 }

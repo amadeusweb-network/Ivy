@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AMW / Utilities / Smart Site Uploader")]
-[assembly: AssemblyDescription("AmadeusWeb.com's Smart Site Uploader (FTPSync)")]
+[assembly: AssemblyTitle("AmadeusWeb.in / FTP Uploader")]
+[assembly: AssemblyDescription("Tool since 2007 by AmadeusWeb.in :: Queues and Uploads Files via FTP")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("AmadeusWeb.world")]
-[assembly: AssemblyProduct("Smart Site Uploader (FTPSync)")]
-[assembly: AssemblyCopyright("Copyright © Imran Ali Namazi, 2007-2025")]
+[assembly: AssemblyCompany("AmadeusWeb.in")]
+[assembly: AssemblyProduct("FTP Uploader (FTPSync)")]
+[assembly: AssemblyCopyright("Copyright © Imran Ali Namazi, 2007-2027")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -31,5 +31,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("25.8.1")]
-[assembly: AssemblyFileVersion("25.8.1")]
+[assembly: AssemblyVersion("26.11.1")]
+[assembly: AssemblyFileVersion("26.11.1")]

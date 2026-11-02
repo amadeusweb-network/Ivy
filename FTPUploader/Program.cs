@@ -5,7 +5,7 @@ namespace AmadeusWeb.SmartSiteUploader
 {
 	public class Program
 	{
-		public readonly static string Caption = "AmadeusWeb.com's Smart Site Uploader (FTPSync)";
+		public readonly static string Caption = "AmadeusWeb.in / FTP Uploader";
 
 		public static bool SilentMode { get; private set; }
 

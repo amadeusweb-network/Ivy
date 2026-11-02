@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace AmadeusWeb.SmartSiteUploader
 {
-    public class FtpInfo
+	public class FtpInfo
 	{
 		public static readonly string ConfigFile = StoreHelper.DataFolder + "FTPUploader.ini";
 
@@ -59,13 +59,13 @@ namespace AmadeusWeb.SmartSiteUploader
 
 		public string Name { get; private set; }
 
-		public string FtpFolder { get; set; }
+		public string LocalFolder { get; set; }
 
-		public string Password { get; set; }
+		public string FtpFolder { get; set; }
 
 		public string Username { get; set; }
 
-		public string LocalFolder { get; set; }
+		public string Password { get; set; }
 
 		#endregion
 
@@ -99,9 +99,9 @@ namespace AmadeusWeb.SmartSiteUploader
 		public static void Save(List<FtpInfo> list)
 		{
 			Options = Clone(list);
-            var lines = new List<string>();
-            foreach (var line in list)
-                lines.Add(line.ToLine());
+			var lines = new List<string>();
+			foreach (var line in list)
+				lines.Add(line.ToLine());
 			File.WriteAllLines(ConfigFile, lines.ToArray());
 		}
 
@@ -175,10 +175,10 @@ namespace AmadeusWeb.SmartSiteUploader
 
 		private static List<FtpInfo> Clone(List<FtpInfo> list)
 		{
-            var r = new List<FtpInfo>();
-            foreach (var item in list)
-                r.Add((FtpInfo)item.MemberwiseClone());
-            return r;
+			var r = new List<FtpInfo>();
+			foreach (var item in list)
+				r.Add((FtpInfo)item.MemberwiseClone());
+			return r;
 		}
 
 		private string GetValNow(Names name)
